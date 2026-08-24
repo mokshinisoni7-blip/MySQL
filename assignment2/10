@@ -1,0 +1,1 @@
+Select count(distinct job_id) as no_of_jobs from employees;
