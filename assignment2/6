@@ -1,0 +1,1 @@
+Select sum(salary) as total _salary_payable from employees;
