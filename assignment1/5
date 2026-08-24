@@ -1,0 +1,4 @@
+create table countries
+   ( country_id varchar(20)  null,
+    country_name char(50) null,
+    region_id varchar(20) null);
