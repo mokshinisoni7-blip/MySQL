@@ -1,0 +1,1 @@
+create  table dup_countries as select * from countries;
