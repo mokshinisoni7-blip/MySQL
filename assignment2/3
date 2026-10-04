@@ -1,2 +1,0 @@
-Select * from employees 
-Order by first_name desc;
