@@ -1,0 +1,1 @@
+ Select Employee_id as ID,Last_name as Name_of_the_employee,department_id as Department_ID from tbl_employee;
