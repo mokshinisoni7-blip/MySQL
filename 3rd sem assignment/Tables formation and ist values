@@ -1,0 +1,60 @@
+->Create database dbms54;
+->Use dbms54;
+->create table tbl_location(
+    	location_id varchar(6) primary key,
+    	regional_group varchar(30));
+->insert into tbl_location
+    	values
+    	(122,'NewYork'),
+    	(123,'Dallas'),
+    	(124,'Chicago'),
+   	 (167,'Boston');
+
+->create table tbl_job(
+    	job_id varchar(6) primary key,
+    	job_function varchar(30)); 
+->insert into tbl_job
+    	values(667,'Clerk'),
+    	(668,'Staff'),
+    	(669,'Analyst'),
+    	(670,'Salesperson'),
+    	(671,'Manager'),
+    	(672,'President');
+
+
+->create table tbl_department(
+    	department_id int primary key,
+    	name varchar(50),
+    	location_id varchar(6),
+    	foreign key(location_id) references tbl_location(location_id)
+    	);
+->insert into tbl_department
+    	values
+    	(10,'Accounting',122),
+    	(20,'Research',124),
+    	(30,'Sales',123),
+    	(40,'Operations',167);
+
+->create table tbl_employee(
+    	Employee_id int primary key,
+    	Last_name char(20),
+    	First_name char(20),
+    	Middle_name char(20),
+  	 job_id varchar(6),
+   	manager_id int,
+    	hiredate date,
+    	salary decimal(7,2),
+    	comm int,
+    	department_id int,
+   	foreign key(department_id) references tbl_department(department_id),
+    	foreign key(job_id) references tbl_job(job_id)
+    	 );
+
+->insert into tbl_employee
+    	 Values
+	(7369,'Smith','John','Q',667,7902,'1994-12-17',800.00,NULL,20),
+    	(7499,'Allen','Kevin','J',670,7698,'1998-02-20',1600.00,300,30),
+    	(7505,'Doyle','Jean','k',671,7638,'1999-04-04',2800.00,NULL,30),
+    	(7506,'Dennis','Lynn','s',671,7638,'1995-05-15',2750.00,NULL,30),
+    	(7507,'Baker','Leslie','D',671,7638,'1995-06-10',2200.00,NULL,40),
+    	(7521,'Wark','Cynthia','D',670,7698,'1985-02-20',1250.00,500,30);
