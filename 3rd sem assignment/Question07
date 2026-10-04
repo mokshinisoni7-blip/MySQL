@@ -1,0 +1,1 @@
+ Select First_name,salary from tbl_employee;
