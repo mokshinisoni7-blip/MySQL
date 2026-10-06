@@ -1,0 +1,2 @@
+Select * from tbl_employee
+where department_id not in(10,30);
