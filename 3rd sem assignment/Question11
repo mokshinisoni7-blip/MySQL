@@ -1,0 +1,2 @@
+select * from tbl_employee
+where department_id in(10,20);
