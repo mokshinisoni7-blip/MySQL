@@ -1,0 +1,2 @@
+select * from tbl_employee
+where salary between 1500 and 4500;
