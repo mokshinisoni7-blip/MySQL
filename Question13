@@ -1,0 +1,2 @@
+select * from tbl_employee
+where  last_name like 's%';
