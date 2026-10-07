@@ -1,0 +1,2 @@
+Select count(*),department_id from tbl_employee
+group by department_id;
