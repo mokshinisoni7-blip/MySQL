@@ -1,0 +1,2 @@
+Select * from tbl_employee
+where department_id = 30 and salary>1500;
