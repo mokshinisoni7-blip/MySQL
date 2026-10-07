@@ -1,0 +1,2 @@
+select * from tbl_employee
+order by last_name asc, department_id desc;
