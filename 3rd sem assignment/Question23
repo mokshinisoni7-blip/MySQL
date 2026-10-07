@@ -1,0 +1,2 @@
+salary,avg(salary) as average from tbl_employee
+group by department_id;
