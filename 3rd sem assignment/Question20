@@ -1,0 +1,2 @@
+select * from tbl_employee
+order by salary desc,last_name asc;
