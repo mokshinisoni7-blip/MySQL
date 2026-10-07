@@ -1,0 +1,2 @@
+Select * from tbl_employee
+where comm is NULL;
