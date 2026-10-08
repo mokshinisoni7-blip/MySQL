@@ -1,0 +1,2 @@
+Select month(hiredate) as month,count(*) as employees from tbl_employee 
+group by hiredate having month(hiredate)=04;
