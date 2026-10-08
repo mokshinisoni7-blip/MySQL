@@ -1,0 +1,2 @@
+select job_id, max(salary) as maximum_salary,min(salary) as minimum_salary, avg(salary) as average from tbl_employee
+group by job_id;
