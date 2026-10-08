@@ -1,0 +1,2 @@
+Select hiredate ,count(*) as No_of_employee from tbl_employee
+group by hiredate having month(hiredate)=02 or month(hiredate)
