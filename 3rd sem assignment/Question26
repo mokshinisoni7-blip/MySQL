@@ -1,0 +1,1 @@
+Select hiredate,count(*)as no_of_employee from tbl_employee group by hiredate;
