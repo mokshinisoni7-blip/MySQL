@@ -1,0 +1,2 @@
+select hiredate, count(*) as No_of_employee from tbl_employee 
+group by hiredate having year(hiredate)=1985;
