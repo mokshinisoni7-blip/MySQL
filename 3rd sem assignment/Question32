@@ -1,0 +1,2 @@
+Select hiredate,count(*) from tbl_employee
+group by hiredate having year(hiredate)=1985 and month(hiredate)=05;
