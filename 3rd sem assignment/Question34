@@ -1,0 +1,2 @@
+select * from tbl_employee
+where salary=(select max(salary) from tbl_employee);
