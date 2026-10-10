@@ -1,0 +1,3 @@
+select * from tbl_employee
+where job_id=(select job_id from tbl_job
+where job_function='Clerk');
