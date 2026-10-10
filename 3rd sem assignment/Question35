@@ -1,0 +1,4 @@
+select * from tbl_employee
+where department_id=(
+select department_id from tbl_department
+where name='sales');
